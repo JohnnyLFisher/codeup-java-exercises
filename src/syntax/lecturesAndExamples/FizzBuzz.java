@@ -1,6 +1,6 @@
-package syntax;
+package syntax.lecturesAndExamples;
 
-public class FizzBuzzLecture {
+public class FizzBuzz {
 
 	static void fizzBuzzFor(int num) {
 		for (int i = 1; i<=num; i++) {

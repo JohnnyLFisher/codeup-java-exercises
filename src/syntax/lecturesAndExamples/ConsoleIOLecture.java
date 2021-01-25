@@ -1,3 +1,5 @@
+package syntax.lecturesAndExamples;
+
 import java.util.Scanner;
 
 public class ConsoleIOLecture {

@@ -1,6 +1,8 @@
+package syntax.lecturesAndExamples;
+
 import java.util.Scanner;
 
-public class StringsLec {
+public class StringsLecture {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

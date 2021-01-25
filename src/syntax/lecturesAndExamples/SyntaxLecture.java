@@ -1,4 +1,4 @@
-package syntax;
+package syntax.lecturesAndExamples;
 
 public class SyntaxLecture {
 

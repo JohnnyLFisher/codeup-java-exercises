@@ -1,6 +1,4 @@
-package syntax;
-
-import java.util.Scanner;
+package syntax.lecturesAndExamples;
 
 public class ControleStatementsLecture {
 
