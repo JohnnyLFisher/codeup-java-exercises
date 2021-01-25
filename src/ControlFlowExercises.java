@@ -145,11 +145,11 @@ public class ControlFlowExercises {
 			System.out.println();
 
 			System.out.println("Would you like to continue? Please answer \"yes\" or \"no\"");
-			String userAnswer = userInput.next();
+			String userAnswer = userInput.nextLine().trim();
 
 			while (!userAnswer.equalsIgnoreCase("yes") && !userAnswer.equalsIgnoreCase("no")) {
 				System.out.println("That is not a valid answer. Please answer \"yes\" or \"no\"");
-				userAnswer = userInput.next();
+				userAnswer = userInput.nextLine().trim();
 			}
 			if (userAnswer.equalsIgnoreCase("yes")) {
 				System.out.println("You have chosen to continue.");

@@ -14,13 +14,13 @@ public class Bob {
 
 		Scanner userInput = new Scanner(System.in);
 
-		System.out.println("Hi, I'm Bob.");
+		System.out.println("What would you like to say to Bob?");
 		System.out.println();
 
 		while(true) {
 			System.out.print("Enter a response: ");
-			String userResponse = userInput.nextLine();
-			System.out.println();
+			String userResponse = userInput.nextLine().trim();
+//			System.out.println();
 
 			if (userResponse.endsWith("?")) {
 				System.out.println("Sure.");
@@ -34,11 +34,11 @@ public class Bob {
 			System.out.println();
 
 			System.out.println("Do you have anything else to say? Please answer \"yes\" or \"no\"");
-			String userAnswer = userInput.nextLine();
+			String userAnswer = userInput.nextLine().trim();
 
 			while (!userAnswer.equalsIgnoreCase("yes") && !userAnswer.equalsIgnoreCase("no")) {
 				System.out.println("That is not a valid answer. Please answer \"yes\" or \"no\"");
-				userAnswer = userInput.nextLine();
+				userAnswer = userInput.nextLine().trim();
 			}
 			if (userAnswer.equalsIgnoreCase("yes")) {
 				System.out.println("Cool.");
