@@ -20,19 +20,18 @@ public class StringExercise {
 			and the amazing triple backslash \\\!
 			-------- */
 
-		String output1 = "We don't need no education\nWe don't need no thought control";
-		String output2 = "Check \"this\" out!, \"s inside of \"s!";
-		String output3 = "In windows, the main drive is usually C:\\";
-		String output4 = "I can do backslashes \\, double backslashes \\\\,\nand the amazing triple backslash \\\\\\!";
-
 		System.out.println("--------");
-		System.out.println(output1);
+		String output = "We don't need no education\nWe don't need no thought control";
+		System.out.println(output);
 		System.out.println("--------");
-		System.out.println(output2);
+		output = "Check \"this\" out!, \"s inside of \"s!";
+		System.out.println(output);
 		System.out.println("--------");
-		System.out.println(output3);
+		output = "In windows, the main drive is usually C:\\";
+		System.out.println(output);
 		System.out.println("--------");
-		System.out.println(output4);
+		output = "I can do backslashes \\, double backslashes \\\\,\nand the amazing triple backslash \\\\\\!";
+		System.out.println(output);
 		System.out.println("--------");
 
 	}
