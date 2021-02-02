@@ -2,6 +2,8 @@ public class Person {
 
 	private String name;
 
+	public String nickname;
+
 	public String getName() {
 		return name;
 	}
@@ -16,6 +18,7 @@ public class Person {
 
 	Person(String name) {
 		this.name = name;
+		this.nickname = name;
 	}
 
 	public static void main(String[] args) {
