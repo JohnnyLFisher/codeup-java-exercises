@@ -9,6 +9,5 @@ public class InputTest {
 		output.getInt(1, 10);
 		output.getDouble();
 		output.getDouble(1, 10);
-		output.setRadius();
 	}
 }

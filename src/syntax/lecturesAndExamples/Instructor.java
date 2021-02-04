@@ -1,4 +1,4 @@
-package arrays;
+package syntax.lecturesAndExamples;
 
 public class Instructor {
 

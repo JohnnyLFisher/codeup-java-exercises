@@ -1,9 +1,10 @@
-package arrays;
+package syntax.lecturesAndExamples;
+
 
 import java.util.Arrays;
 import java.util.Random;
 
-public class ArrayLec {
+public class ArrayLecture {
 	// Let's have some fun with arrays!
 
 	public static void main(String[] args) {
