@@ -1,4 +1,4 @@
-package syntax.lecturesAndExamples;
+package lecturesAndExamples;
 
 public class Car {
 	//    static Person inventor= new Person("Karl", "Benz");

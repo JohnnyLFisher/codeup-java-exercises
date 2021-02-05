@@ -1,4 +1,4 @@
-package syntax.lecturesAndExamples;
+package lecturesAndExamples;
 
 public class MethodsLecture {
 	// Method Structure
@@ -17,7 +17,7 @@ public class MethodsLecture {
 	}
 
 	public static void main(String[] args) {
-		// This main method can be seen as separate from the syntax.lecturesAndExamples.MethodsLecture class, so we need to instantiate all variables
+		// This main method can be seen as separate from the lecturesAndExamples.MethodsLecture class, so we need to instantiate all variables
 		//   again, that we want to use in logical calculations here
 
 		// Let's add 2 numbers.
@@ -54,7 +54,7 @@ public class MethodsLecture {
 		System.out.println(MethodsLecture.getPower(6, 3));
 		System.out.println(MethodsLecture.getPowerRecursive(3, 5));
 
-		// String thisMessage = syntax.lecturesAndExamples.MethodsLecture.tenureMessage("Java", 20);
+		// String thisMessage = lecturesAndExamples.MethodsLecture.tenureMessage("Java", 20);
 	} // END: psvm
 
 	// Doing an exponent (i.e. 3 ^ 2 = 9) using a for loop
@@ -130,7 +130,7 @@ public class MethodsLecture {
 	}
 
 	// ******************** RECURSION *********************** //
-	public static void count(int n) { // 1. syntax.lecturesAndExamples.MethodsLecture.count(5)    -- from the PSVM
+	public static void count(int n) { // 1. lecturesAndExamples.MethodsLecture.count(5)    -- from the PSVM
 		if (n <= 0) {
 			System.out.println("All done!");
 			return;

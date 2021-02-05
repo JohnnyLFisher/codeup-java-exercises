@@ -1,4 +1,4 @@
-package syntax.lecturesAndExamples;
+package lecturesAndExamples;
 
 public class CarTest {
 

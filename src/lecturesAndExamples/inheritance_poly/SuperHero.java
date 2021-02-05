@@ -1,4 +1,4 @@
-package syntax.lecturesAndExamples.inheritance_poly;
+package lecturesAndExamples.inheritance_poly;
 
 class SuperHero extends Person {
 

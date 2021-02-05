@@ -1,4 +1,4 @@
-package syntax.lecturesAndExamples.inheritance_poly;
+package lecturesAndExamples.inheritance_poly;
 
 public class Manager extends Employee {
 	public Manager(String managersName){

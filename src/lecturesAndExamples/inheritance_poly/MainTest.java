@@ -1,4 +1,4 @@
-package syntax.lecturesAndExamples.inheritance_poly;
+package lecturesAndExamples.inheritance_poly;
 
 public class MainTest {
 	public static void main(String[] args) {
