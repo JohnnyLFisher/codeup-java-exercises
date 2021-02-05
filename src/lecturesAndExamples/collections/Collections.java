@@ -13,7 +13,7 @@ public class Collections {
 		// 1. Initialize an ArrayList of Strings, called roasts
 		//   add light, medium, medium, dark to the array list, one at a time
 		ArrayList<String> roasts = new ArrayList<>();
-		roasts.add("light"); // similar to Javascript ".push()"
+		roasts.add("light"); // similar to a Javascript ".push()"
 		roasts.add("medium");
 		roasts.add("medium");
 		roasts.add("dark");
@@ -23,9 +23,9 @@ public class Collections {
 		// 2. Check to see if the list contains "dark" , and then "espresso"
 		boolean result;
 		result = roasts.contains("dark");
-		System.out.println( result ? "Contains dark!" : "Does not contain dark!");
+		System.out.println(result ? "Contains dark!" : "Does not contain dark!");
 		result = roasts.contains("espresso");
-		System.out.println( result ? "Contains espresso!" : "Does not contain espresso!");
+		System.out.println(result ? "Contains espresso!" : "Does not contain espresso!");
 
 		// 3. Find the last index of "medium" in the array
 		int index = roasts.lastIndexOf("medium");
@@ -38,6 +38,7 @@ public class Collections {
 		} else {
 			System.out.println("The roasts list is NOT empty! Java FTW");
 		}
+
 		System.out.println(roasts.isEmpty() ? "01 List is empty" : "01 List is NOT empty");
 
 
@@ -55,13 +56,12 @@ public class Collections {
 		roasts.add("espresso"); // [light, light, medium, medium, dark, espresso]
 		System.out.println("Original roasts: " + roasts);
 
-		roasts.remove("light");
-		System.out.println("Roasts now loos like: " + roasts);
-
+		roasts.remove("espresso");
+		System.out.println("Roasts now looks like: " + roasts);
 
 		// If we wanted to remove every instance of "light"
-		boolean keepGoing = true;
-		while (keepGoing) {
+		boolean keepGoing = roasts.contains("light");
+		while(keepGoing) {
 			if (roasts.contains("light")) {
 				roasts.remove("light");
 			} else {
@@ -73,7 +73,7 @@ public class Collections {
 
 		// 7. Remove the element at index 2
 		roasts.remove(2);
-		System.out.println("After removing index 2, roast = " + roasts);
+		System.out.println("After removing index 2, roasts = " + roasts);
 
 
 		// *************************************************** //
@@ -82,9 +82,9 @@ public class Collections {
 
 		// 1. Create a HashMap called usernames that contains:
 		//   a. first name // String
-		//   b. Github username // String
+		//   b. Github username  // String
 		HashMap<String, String> usernames = new HashMap<>();
-		// put ssome data in the hashmap
+		// put some data in the hashmap
 		usernames.put("Casey", "fridaynext");
 		usernames.put("Daniel", "danielfryar");
 		usernames.put("Fernando", "fmendoza");
@@ -98,16 +98,16 @@ public class Collections {
 		// 3. use the .put() method to add "Casey" -> "fridaynext" back to the map
 		usernames.put("Casey", "fridaynext");
 
-		// 4. use the .putIfAbsent() method to add 
+		// 4. use the .putIfAbsent() method to add
 		//   a. "Vivian" -> "viviancan"
 		//   b. "Casey" -> "XpenguinX"
 		usernames.putIfAbsent("Daniel", "danielfryar");
-		usernames.putIfAbsent("Casey", "fridaynext");
+		usernames.putIfAbsent("Casey", "XpenguinX");
 		System.out.println(usernames);
 
-		// 5. What happend with the .putIfAbsent()? Did both items get added? Why/why not?
-		// the key "Casey" was present, so we did no add that key/value pair with XpenguinX
-		// the key "Daniel" was absent, so we added that key/value pair to the HashMap
+		// 5. What happened with the .putIfAbsent()? Did both items get added? Why/why not?
+		// the key "Casey" was present, so we did not add that key/value pair with XpenguinX
+		// the key "Daniel" WAS absent, so we added that key/value pair to the HashMap
 
 		// 6. Use the .remove() method to remove "Casey"
 		usernames.remove("Casey");
@@ -117,16 +117,17 @@ public class Collections {
 		usernames.replace("Daniel", "danielfryardev");
 		System.out.println(usernames);
 
-		// Change the key for "Daniel
+		// Change the key for "Daniel" (have to completely remove and re-add that element to the HashMap
 		String danielValue = usernames.get("Daniel");
 		usernames.remove("Daniel");
-		usernames.put("Daniel", danielValue);
+		usernames.put("Daniel Fryar", danielValue);
 
-		System.out.println("After changing the value for daniel" + usernames);
+		System.out.println("After changing 'Daniel' key: " + usernames);
+
 
 		// 8. Use the .clear() method to clear the map
 		// 9. Use the .isEmpty() method to verify that it was cleared
-		usernames.clear(); // this should empty the HashMap
+		usernames.clear(); // this should empty the hashmap
 		System.out.println(usernames.isEmpty() ? "HashMap EMPTY!" : "HashMap NOT empty!");
 
 
